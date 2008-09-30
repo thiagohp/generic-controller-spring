@@ -6,9 +6,10 @@
 	<artifactId>generic-controller-spring</artifactId>
 	<packaging>jar</packaging>
 	<version>0.9</version>
-	<name>Generic controller implementation using Spring transaction annotations</name>
+	<name>Generic Controller-Spring</name>
+	<description>Generic controller implementation using Spring transaction annotations</description>
 	<inceptionYear>2008</inceptionYear>
-	<url>http://www.arsmachina.com.br/project/generic-controller-spring</url>
+	<url>http://www.arsmachina.com.br/project/genericcontrollerspring</url>
 	<parent>
 		<groupId>br.com.arsmachina</groupId>
 		<artifactId>parent</artifactId>

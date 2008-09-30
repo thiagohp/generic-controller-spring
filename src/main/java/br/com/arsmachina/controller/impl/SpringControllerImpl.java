@@ -29,11 +29,11 @@ import br.com.arsmachina.dao.SortCriterion;
  * methods that can write to the object store and {@link Transactional}<code>(readOnly=true)</code>
  * all  methods that read from the object store.
  * 
- * @author Thiago H. de Paula Figueiredo (ThiagoHP)
+ * @author Thiago H. de Paula Figueiredo
  * @param <T> the entity class related to this controller.
  * @param <K> the type of the field that represents the entity class' primary key.
  */
-public class SpringControllerImpl<T, K extends Serializable> extends ControllerImpl<T, K> {
+public abstract class SpringControllerImpl<T, K extends Serializable> extends ControllerImpl<T, K> {
 
 	/**
 	 * Single constructor of this class.
@@ -60,15 +60,6 @@ public class SpringControllerImpl<T, K extends Serializable> extends ControllerI
 	@Transactional
 	public void delete(T object) {
 		super.delete(object);
-	}
-
-	/**
-	 * @see br.com.arsmachina.controller.impl.GenericControllerImpl#merge(java.lang.Object)
-	 */
-	@Override
-	@Transactional
-	public T merge(T object) {
-		return super.merge(object);
 	}
 
 	/**

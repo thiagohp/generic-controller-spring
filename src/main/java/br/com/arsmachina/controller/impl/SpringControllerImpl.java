@@ -76,8 +76,8 @@ public abstract class SpringControllerImpl<T, K extends Serializable> extends Co
 	 */
 	@Override
 	@Transactional
-	public void saveOrUpdate(T object) {
-		super.saveOrUpdate(object);
+	public T saveOrUpdate(T object) {
+		return super.saveOrUpdate(object);
 	}
 
 	/**
@@ -85,8 +85,8 @@ public abstract class SpringControllerImpl<T, K extends Serializable> extends Co
 	 */
 	@Override
 	@Transactional
-	public void update(T object) {
-		super.update(object);
+	public T update(T object) {
+		return super.update(object);
 	}
 
 	/**

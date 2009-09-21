@@ -44,100 +44,66 @@ public abstract class SpringControllerImpl<T, K extends Serializable> extends Co
 		super(dao);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.GenericControllerImpl#delete(java.io.Serializable)
-	 */
 	@Override
 	@Transactional
 	public void delete(K id) {
 		super.delete(id);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.GenericControllerImpl#delete(java.lang.Object)
-	 */
 	@Override
 	@Transactional
 	public void delete(T object) {
 		super.delete(object);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.GenericControllerImpl#save(java.lang.Object)
-	 */
 	@Override
 	@Transactional
 	public void save(T object) {
 		super.save(object);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.GenericControllerImpl#saveOrUpdate(java.lang.Object)
-	 */
 	@Override
 	@Transactional
 	public T saveOrUpdate(T object) {
 		return super.saveOrUpdate(object);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.GenericControllerImpl#update(java.lang.Object)
-	 */
 	@Override
 	@Transactional
 	public T update(T object) {
 		return super.update(object);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.ControllerImpl#countAll()
-	 */
 	@Transactional(readOnly = true)
 	@Override
 	public int countAll() {
 		return super.countAll();
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.ControllerImpl#findAll()
-	 */
 	@Transactional(readOnly = true)
 	@Override
 	public List<T> findAll() {
 		return super.findAll();
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.ControllerImpl#findAll(int, int,
-	 * br.com.arsmachina.dao.SortCriterion[])
-	 */
 	@Transactional(readOnly = true)
 	@Override
 	public List<T> findAll(int firstResult, int maxResults, SortCriterion... sortCriteria) {
 		return super.findAll(firstResult, maxResults, sortCriteria);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.ControllerImpl#findById(java.io.Serializable)
-	 */
 	@Transactional(readOnly = true)
 	@Override
 	public T findById(K id) {
 		return super.findById(id);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.ControllerImpl#findByIds(K[])
-	 */
 	@Transactional(readOnly = true)
 	@Override
 	public List<T> findByIds(K... ids) {
 		return super.findByIds(ids);
 	}
 
-	/**
-	 * @see br.com.arsmachina.controller.impl.ControllerImpl#refresh(java.lang.Object)
-	 */
 	@Transactional(readOnly = true)
 	@Override
 	public void refresh(T object) {
